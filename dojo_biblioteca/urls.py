@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from biblioteca import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.render_index),
+    path('cadastrar/livros', views.render_cadastrar_livros)
 ]
