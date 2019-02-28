@@ -80,9 +80,75 @@ header nav a {
     justify-content: center;
 }
 
+.form-cadastro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.form-cadastro .caixa {
+    background-color: #34addc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.caixa p {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa button {
+    background-color: #2b4d9a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 12pt;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.caixa a {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 10pt;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sucesso {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.sucesso .titulo {
+    font-size: 36pt;
+}
+
+.sucesso a {
+    background-color: #34addc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 10pt;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+}
+
 footer {
     align-items: center;
     background-color: #2d2d2d;
+    bottom: 0;
     color: white;
     display: flex;
     justify-content: center;

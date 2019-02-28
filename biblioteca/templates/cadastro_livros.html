@@ -3,16 +3,16 @@
 {% load staticfiles %}
 
 {% block content %}
-    <h1>Cadastre seus livros aqui:</h1>
-    <form method="POST" action="/cadastrar/livros">
-    {% csrf_token %}
-    <div>
-      {{form.as_p}}
-    </div>
+    <section class="form-cadastro">
+        <div class="caixa">
+            <h3>Cadastre seus livros aqui:</h3>
+            <form method="POST" action="/cadastrar/livros">
+                {% csrf_token %}
+                {{ form.as_p }}
 
-    <div>
-      <button type="submit">Cadastrar</button>
-    </div>
-  </form>
-    <a href="/">voltar</a>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <a href="/">Voltar</a>
+        </div>
+    </section>
 {% endblock %}

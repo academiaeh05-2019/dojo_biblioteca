@@ -14,7 +14,6 @@ def render_index(request):
 def render_cadastrar_livros(request):
     if request.method == 'POST':
         livro_form = LivroForm(request.POST)
-        print(livro_form)
         if livro_form.is_valid():
             livro = Livro()
             livro.titulo = livro_form.cleaned_data['titulo']
