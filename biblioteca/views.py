@@ -2,14 +2,16 @@ from django.shortcuts import render
 from biblioteca.form import LivroForm
 from biblioteca.models import Livro
 
+
 # Create your views here.
 def render_index(request):
-    # listar livros cadastrados por data de publicação
+    # Listar livros para utilizar no index
+    # BÔNUS: Listar eles por ordem de data de publicação
     #
     return render(request, 'index.html', {})
 
-def render_cadastrar_livros(request):
 
+def render_cadastrar_livros(request):
     if request.method == 'POST':
         livro_form = LivroForm(request.POST)
         print(livro_form)

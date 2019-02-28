@@ -1,6 +1,89 @@
-body{
-  margin: 0;
-  padding: 0;
-  font-family:sans-serif;
-  background-color: #f1f1f1;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    align-items: flex-start;
+    background-color: #34addc;
+    border-bottom-right-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 30vw;
+    justify-content: center;
+}
+
+.banner h2, .banner p, .banner a {
+    margin-left: 50px;
+}
+
+.banner hr {
+    align-self: flex-start;
+    background-color: white;
+    border: 0;
+    height: 3px;
+    margin: 0;
+    width: 45%;
+}
+
+.banner p {
+    width: 30%;
+}
+
+.banner a {
+    background-color: #2b4d9a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.info p {
+    width: 15%;
+}
+
+.livros {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
