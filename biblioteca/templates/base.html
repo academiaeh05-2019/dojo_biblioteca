@@ -2,15 +2,33 @@
 
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <script defer src="{% static 'js/scripts.js' %}"></script>
-    <title></title>
-  </head>
-  <body>
-      {% block content %}
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Hack</h1>
+        <div class="menu-mobile">
+            <div class="traco"></div>
+            <div class="traco"></div>
+            <div class="traco"></div>
+        </div>
+    </header>
 
-      {% endblock %}
-  </body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/cadastrar/livros">Cadastre um Livro</a>
+        </nav>
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer>
+        <p>Desenvolvido por Refeerjaluanagrba© Todos os direitos reservados</p>
+    </footer>
+</body>
 </html>

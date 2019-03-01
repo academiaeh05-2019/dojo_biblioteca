@@ -3,6 +3,28 @@
 {% load staticfiles %}
 
 {% block content %}
-    <h1>Bem-vindo estudantes</h1>
-    <a href="/cadastrar/livros">clique aqui para cadastrar um livro</a>
+    <section class="banner">
+        <h2>Bem-vindos a Biblioteca Hack!</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
+            luctus odio egestas maximus lobortis.</p>
+        <a href="/cadastrar/livros">Cadastre seu livro!</a>
+    </section>
+    <section class="info">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
+            luctus odio egestas maximus lobortis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
+            luctus odio egestas maximus lobortis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
+            luctus odio egestas maximus lobortis.</p>
+    </section>
+    <section class="livros">
+        <h3>Nosso Acervo</h3>
+        <p>Temos todo tipo de livros, lançados em qualquer época. Veja alguns exemplos do nosso acervo:</p>
+        <div>
+            {% for livro in livros %}
+                <p>{{ livro.titulo }}</p>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}

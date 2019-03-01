@@ -1,6 +1,205 @@
-body{
-  margin: 0;
-  padding: 0;
-  font-family:sans-serif;
-  background-color: #f1f1f1;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    align-items: center;
+    background-color: #2d2d2d;
+    box-sizing: border-box;
+    display: flex;
+    left: 0;
+    justify-content: flex-start;
+    padding: 20px;
+    position: absolute;
+    transition: .4s;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    top: 80px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav.ativo {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.menu-mobile {
+    cursor: pointer;
+}
+
+.menu-mobile .traco {
+    background-color: #fff;
+    height: 3px;
+    margin: 6px 0;
+    transition: .4s;
+    width: 32px;
+}
+
+.menu-mobile.ativo .traco:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.menu-mobile.ativo .traco:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-mobile.ativo .traco:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -5px);
+}
+
+.banner {
+    align-items: flex-start;
+    background-color: #34addc;
+    border-bottom-right-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 30vw;
+    justify-content: center;
+}
+
+.banner h2, .banner p, .banner a {
+    margin-left: 50px;
+}
+
+.banner hr {
+    align-self: flex-start;
+    background-color: white;
+    border: 0;
+    height: 3px;
+    margin: 0;
+    width: 45%;
+}
+
+.banner p {
+    width: 30%;
+}
+
+.banner a {
+    background-color: #2b4d9a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.info p {
+    width: 15%;
+}
+
+.livros {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-cadastro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.form-cadastro .caixa {
+    background-color: #34addc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.caixa p {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa button {
+    background-color: #2b4d9a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 12pt;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.caixa a {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 10pt;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sucesso {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.sucesso .titulo {
+    font-size: 36pt;
+}
+
+.sucesso a {
+    background-color: #34addc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 10pt;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+}
+
+footer {
+    align-items: center;
+    background-color: #2d2d2d;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
