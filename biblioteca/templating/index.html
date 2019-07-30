@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
-
 {% block content %}
     <section class="banner">
         <h2>Bem-vindos a Biblioteca Hack!</h2>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
             luctus odio egestas maximus lobortis.</p>
-        <a href="/cadastrar/livros">Cadastre seu livro!</a>
+        <a href="/cadastrar/">Cadastre seu livro!</a>
     </section>
     <section class="info">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia ligula sed sodales laoreet. Donec
@@ -24,7 +22,7 @@
         <div>
             {% for livro in livros %}
                 <p>{{ livro.titulo }}</p>
-            {% endfor %}
+            {% endfr %}
         </div>
     </section>
 {% endblock %}

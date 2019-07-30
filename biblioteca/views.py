@@ -10,6 +10,9 @@ def render_index(request):
     #
     return render(request, 'index.html', {})
 
+def render_editoras_cadastradas_admin():
+        return render(request, 'paginanaoexistente.html', {})
+
 
 def render_cadastrar_livros():
     if request.method == 'POST':
@@ -18,8 +21,7 @@ def render_cadastrar_livros():
             livro = Livro()
             livro.titulo = livro_form.cleaned_data['titulo']
             livro.lancamento = livro_form.cleaned_data['lancamento']
-            livro.descricao = livro_form.cleaned_data['descricao']
-            livro.autor = livro_form.cleaned_data['autor']
+            livro.autor = livro_form.cleaned_data.get['autor']
             livro.genero = livro_form.cleaned_data['genero']
             return render(request, 'sucesso.html')
 
